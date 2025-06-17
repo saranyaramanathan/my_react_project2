@@ -1,12 +1,28 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 React Notes App
 
-Currently, two official plugins are available:
+A simple and elegant Notes application built with **React** and **Tailwind CSS**, supporting powerful features like pinning, tagging, archiving, and trash recovery. All data is stored locally using the browser's **localStorage**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Create, edit, and delete notes
+- 📌 Pin important notes to keep them at the top
+- 🏷️ Add multiple tags to notes
+- 🔍 Filter notes by tags
+- 📂 Archive notes (hide from main list, but recoverable)
+- 🗑️ Move notes to trash instead of deleting permanently
+- 💾 Data persists using `localStorage`
+- 🎨 Clean, responsive UI with Tailwind CSS
+- 🖼️ View full note details in a modal
+
+---
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- LocalStorage for data persistence
+
+---
