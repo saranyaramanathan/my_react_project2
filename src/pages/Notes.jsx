@@ -139,7 +139,7 @@ function Notes({notes}){
       </select>
         </div>:<div></div>} 
       <div className="notes_container grid lg:grid-cols-4 md:grid-cols-3 md:mt-4 sm:grid-cols-2 xs:grid-col-1 flex-1 overflow-auto w-full gap-4 sm:mt-3 p-2 grid-cols-2">
-        {filteredNotes.length == 0 && (
+        {filteredNotes.length == 0 &&  (
           <p className="text-white">No Notes Found!</p>
         )}
        {/* {!showFilter && !showArchived ?filteredNotes.map((note) => (
@@ -148,13 +148,13 @@ function Notes({notes}){
         
        
         {showArchived?<div className="flex flex-col space-x-16 w-[100%] mx-auto">
-          <div className="text-white  text-2xl flex flex-col my-4 gap-2 "><p className="my-4 bg-orange-600 border rounded text-center">Archive</p> 
+          <div className="text-white  text-2xl flex flex-col my-4 gap-2 "><p className="my-4 bg-orange-600 border rounded text-center">{archivedNotes.length>0?"Archive":"Archive(0)"}</p> 
           {archivedNotes.map((note) => (
           <NoteItem key={note.id} note={note} />
           
         ))}
         </div>
-         <div className="text-white  text-2xl flex flex-col"><p className="my-4 bg-red-600 border rounded text-center">Trash</p>
+         <div className="text-white  text-2xl flex flex-col"><p className="my-4 bg-red-600 border rounded text-center">{trashedNotes.length>0?"Trash":"Trash(0)"}</p>
               {trashedNotes.map((note) => (
           <NoteItem key={note.id} note={note} />
           
